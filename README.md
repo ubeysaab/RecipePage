@@ -10,7 +10,7 @@ Add a screenshot of your solution. The easiest way to do this [is](https://www.a
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here](https://ubeysaab.github.io/RecipePage/)
 
 ### Built with
 
