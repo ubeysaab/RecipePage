@@ -1,0 +1,71 @@
+.social-links-profile-main {
+  $border-radius: 12px;
+  background-color: $grey800;
+  font-family: $font-family;
+  color: white;
+  padding: 45px 15px 15px 30px;
+  font-size: 14px;
+  border-radius: $border-radius;
+
+  &__top {
+    margin-bottom: 30px;
+    text-align: center;
+    .circle {
+      margin-inline: auto;
+      margin-bottom: 20px;
+      width: 90px;
+      height: 90px;
+      background-image: url("/assets/images/avatar-jessica.jpeg");
+      background-size: contain;
+      background-position: center;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    b {
+      display: block;
+      color: $green;
+      margin-bottom: 25px;
+    }
+
+    @include md {
+      width: 340px;
+    }
+  }
+
+  &__links {
+    div ~ div {
+      margin-top: 20px;
+    }
+
+    div {
+      display: block;
+      width: 90%;
+      margin-inline: auto;
+      background-color: $grey700;
+      padding: 10px 0px;
+      text-align: center;
+      border-radius: $border-radius - 5;
+      pointer-events: visible;
+      transition: background-color 0.8s ease;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        font-weight: 500;
+        cursor: url("/assets/images/icons8-cursor-50.png"), auto;
+      }
+
+      &:hover {
+        cursor: url("/assets/images/icons8-cursor-50.png"), auto;
+        background-color: $green;
+        a {
+          color: $grey900;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.recipe-page-main {
+  $font-family1: "Young Serif", serif;
+  $font-family2: "Outfit", sans-serif;
+  $base-margin:20px;
+  &__image {
+    width: 100%;
+    height: 200px;
+    background-image: url("../../assets/images/image-omelette.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: $base-margin;
+  }
+
+  &__content {
+    padding: 10px;
+
+    h1{
+      font-size: 2.5rem;
+    }
+
+    p,
+    b {
+      font-family: $font-family2;
+    }
+    p {
+      font-weight: 400;
+    }
+
+    strong,
+    h2 {
+      text-transform: capitalize;
+    }
+
+    h2 {
+      color: $brown800;
+    }
+
+    .title,
+    h2 {
+      font-family: $font-family1;
+    }
+    .explanation {
+      margin-block: 25px;
+    }
+
+    .preparation-time {
+      // font-size: 18px;
+      background-color: $rose50;
+      padding: 25px 20px 5px 25px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      b {
+        color: $rose800;
+        font-weight: 900;
+        font-size: 1.2rem;
+        // margin: 0;
+       
+      }
+
+      ul {
+        margin-left: -5px;
+        list-style-position: inside;
+        line-height: 2;
+        
+        li {
+          text-indent: 20px;
+          word-spacing: 1px;
+          &::marker {
+            color: $rose800;
+          }
+
+          
+   
+
+          
+        }
+      }
+    }
+
+    .ingredients {
+      border-bottom: 1px solid $ston150;
+      margin-bottom: 20px;
+      h2{
+        font-size: 1.8rem;
+      }
+      ul {
+        margin-left: 20px;
+        line-height: 2;
+
+        li {
+
+          text-indent: 0px;
+          &::marker {
+            color: $brown800;
+          }
+        }
+      }
+    }
+
+    .instruction {
+      margin-bottom: 20px;
+      border-bottom: 1px solid $ston150;
+
+            h2{
+        font-size: 1.8rem;
+      }
+      ol {
+        margin-left: 20px;
+
+        li {
+          &::marker {
+            color: $brown800;
+            font-weight: 700;
+            font-family: $font-family2;
+          }
+
+          ~ li {
+            margin-top: 10px;
+          }
+
+          p {
+            text-indent: 10px;
+          }
+        }
+      }
+    }
+
+    .nutrition {
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      table {
+        margin-block: 20px;
+        width: 100%;
+        tr {
+          padding:  0 30% 0 5%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        // border: 1px solid red;
+        padding: 10px  40% 10px 5%;
+
+
+
+          &:has(+ tr) {
+            border-bottom: 1px solid $ston150;
+          }
+          td {
+            font-family: $font-family2;
+            text-transform: capitalize;
+
+            ~ td {
+              width: 50px;
+              // border: 1px solid red;
+              justify-self: flex-start;
+              color: $brown800;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include md {
+    width: max(740px,70%);
+    // border: 1px solid blue;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 40px;
+
+    &__image {
+      border-radius: 10px;
+      // background-size: contain;
+      // background-repeat: no-repeat;
+      height: 300px;
+    }
+  }
+
+  @include lg{
+    width: min(740px,50%);
+  }
+}

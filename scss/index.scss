@@ -1,0 +1,37 @@
+// variables
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Rowdies:wght@300;400;700&family=Young+Serif&display=swap");
+@import "./variables";
+
+// layout
+@import "./reset";
+@import "./breakpoints";
+
+// components
+
+// @import "./components/BlogPreviewCard";
+
+// @import "./components/SocialLinksProfileMain";
+
+@import "./components/RecipePage";
+
+body {
+  background-color: $white;
+  padding-inline: 20px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  user-select: none;
+
+  @include md {
+    background-color: $rose50;
+    padding: 20px;
+  }
+}
+
+.circle {
+  font: 100;
+}
+
+// utilities
+
+@import "./utilities";

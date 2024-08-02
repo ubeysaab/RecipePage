@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Rowdies:wght@300;400;700&family=Young+Serif&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+.recipe-page-main__image {
+  width: 100%;
+  height: 200px;
+  background-image: url("../../assets/images/image-omelette.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.recipe-page-main__content {
+  padding: 10px;
+}
+.recipe-page-main__content h1 {
+  font-size: 2.5rem;
+}
+.recipe-page-main__content p,
+.recipe-page-main__content b {
+  font-family: "Outfit", sans-serif;
+}
+.recipe-page-main__content p {
+  font-weight: 400;
+}
+.recipe-page-main__content strong,
+.recipe-page-main__content h2 {
+  text-transform: capitalize;
+}
+.recipe-page-main__content h2 {
+  color: hsl(14, 45%, 36%);
+}
+.recipe-page-main__content .title,
+.recipe-page-main__content h2 {
+  font-family: "Young Serif", serif;
+}
+.recipe-page-main__content .explanation {
+  margin-block: 25px;
+}
+.recipe-page-main__content .preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 25px 20px 5px 25px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.recipe-page-main__content .preparation-time b {
+  color: hsl(332, 51%, 32%);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.recipe-page-main__content .preparation-time ul {
+  margin-left: -5px;
+  list-style-position: inside;
+  line-height: 2;
+}
+.recipe-page-main__content .preparation-time ul li {
+  text-indent: 20px;
+  word-spacing: 1px;
+}
+.recipe-page-main__content .preparation-time ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.recipe-page-main__content .ingredients {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-bottom: 20px;
+}
+.recipe-page-main__content .ingredients h2 {
+  font-size: 1.8rem;
+}
+.recipe-page-main__content .ingredients ul {
+  margin-left: 20px;
+  line-height: 2;
+}
+.recipe-page-main__content .ingredients ul li {
+  text-indent: 0px;
+}
+.recipe-page-main__content .ingredients ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+.recipe-page-main__content .instruction {
+  margin-bottom: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.recipe-page-main__content .instruction h2 {
+  font-size: 1.8rem;
+}
+.recipe-page-main__content .instruction ol {
+  margin-left: 20px;
+}
+.recipe-page-main__content .instruction ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+}
+.recipe-page-main__content .instruction ol li ~ li {
+  margin-top: 10px;
+}
+.recipe-page-main__content .instruction ol li p {
+  text-indent: 10px;
+}
+.recipe-page-main__content .nutrition h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.recipe-page-main__content .nutrition table {
+  margin-block: 20px;
+  width: 100%;
+}
+.recipe-page-main__content .nutrition table tr {
+  padding: 0 30% 0 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40% 10px 5%;
+}
+.recipe-page-main__content .nutrition table tr:has(+ tr) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.recipe-page-main__content .nutrition table tr td {
+  font-family: "Outfit", sans-serif;
+  text-transform: capitalize;
+}
+.recipe-page-main__content .nutrition table tr td ~ td {
+  width: 50px;
+  justify-self: flex-start;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+@media (min-width: 720px) {
+  .recipe-page-main {
+    width: max(740px, 70%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 40px;
+  }
+  .recipe-page-main__image {
+    border-radius: 10px;
+    height: 300px;
+  }
+}
+@media (min-width: 960px) {
+  .recipe-page-main {
+    width: min(740px, 50%);
+  }
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  padding-inline: 20px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  user-select: none;
+}
+@media (min-width: 720px) {
+  body {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+  }
+}
+
+.circle {
+  font: 100;
+}
+
+.circle {
+  border-radius: 50%;
+}
